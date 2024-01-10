@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/console_style.css" />
+    <title>Example</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="noise"></div>
+      <div class="overlay"></div>
+      <div class="terminal">
+        <h1>
+          <span class="errorcode">1. </span>
+          <span id="loading">Reversed</span>
+        </h1>
+        <p class="output" id="loading">
+          Congrats. You did it. Now it's the time to start the challenge.
+        </p>
+        <p class="output">
+          It's up to you to find the next key. There is nothing you can't use.
+          <span class="errorcode">Borders are only in your head.</span>
+        </p>
+        <p class="output">Good luck.</p>
+      </div>
+      <!-- <img src="../img/memes/1.jpg" alt="" class="img-style output" /> -->
+      <form class="terminal" action="/submit" method="POST">
+        <p class="output">
+          <label for="id">id:</label>
+          <input type="text" id="id" name="id" class="styled-input" />
+        </p>
+        <p class="output">
+          <label for="key">key:</label>
+          <input class="styled-input" type="text" id="key" name="key" />
+        </p>
+        <p class="output">
+          <input type="submit" value="Submit" class="styled-button" />
+        </p>
+      </form>
+    </div>
+  </body>
+  <script src="../js/textloading.js"></script>
+</html>
